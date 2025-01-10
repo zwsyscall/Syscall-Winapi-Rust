@@ -29,4 +29,7 @@ This is purely sceptical, but my assumption is that as Rust binaries haven't bee
 
 A process having syscalls should itself already be a huge red flag, but even that flag can be avoided as  as they can just be generated on the fly with WriteProcesMemory or another similar tool.
 
-### Please don't use this for bad stuff, it's just a demo.
+#### Obligatory
+
+Do not use for le evil, I've already reported this to most security vendors, so at the time of reading this is hopefully patched.
+As this is using hell's gate, this will likely not work on your version due to changing SSNs and calling conventions between versions.
